@@ -93,6 +93,8 @@ export class AppComponent implements OnInit {
   });
   DialogRef.afterClosed().subscribe({
     next: (val) => {
+      console.log(val);
+
       if(val){
         this.getEmployee();
       }
